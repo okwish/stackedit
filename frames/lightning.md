@@ -32,10 +32,10 @@ a class;  inherit from `pl.LightningModule` [ Its implementation inherits from n
 - these work along with `pl.Trainer` 
 - **forward(self, x)** - similar implementation as in PyTorch models.. (inference, .. )
 - **training_step(self, batch, batch_id)** - "one batch step" training (hence "step" in the name)
-	> x, y = batch
-	> pred = self.forward(x)
-	> loss = self.loss_fn(pred, y)
-	> return loss
+	> x, y = batch  
+	> pred = self.forward(x)  
+	> loss = self.loss_fn(pred, y)  
+	> return loss  
 	
 	(log loss, eval metrics, etc. )   
  
@@ -227,5 +227,5 @@ All these while making Trainer object.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MzU3NTk5N119
+eyJoaXN0b3J5IjpbLTM5MzkyNTE1LDEwNjM1NzU5OTddfQ==
 -->
