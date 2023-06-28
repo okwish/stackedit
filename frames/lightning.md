@@ -93,9 +93,9 @@ https://github.com/Lightning-AI/lightning/blob/master/src/lightning/pytorch/core
 
 # Trainer
 
-> trainer = pl.Trainer()
-> trainer.fit( lightning_module, train_loader, val_loader ) [both train_loader and val_loader]
-> trainer.fit( lightning_module, data_module )
+> trainer = pl.Trainer()   
+> trainer.fit( lightning_module, train_loader, val_loader ) [both train_loader and val_loader]   
+> trainer.fit( lightning_module, data_module )   
 - "for e in range(epochs):  .... "<- boiler plate. This is replaced.
 - like the **"general fit function"** 
 - internally uses the training_step, etc. in lightning module.
@@ -227,5 +227,5 @@ All these while making Trainer object.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MzkyNTE1LDEwNjM1NzU5OTddfQ==
+eyJoaXN0b3J5IjpbNjY1MTIwMTgxLDEwNjM1NzU5OTddfQ==
 -->
