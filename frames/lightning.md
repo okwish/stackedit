@@ -251,9 +251,12 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 
 **callbacks.ModelCheckpoint**      
 - allows you to customize the saving routine of your checkpoints : how many checkpoints to keep, when to save, which metric to look out for, etc.
-- `trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"))`
+- `trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"))` 
+
+**seed**    
+`pl.seed_everything()` seed value arg
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMTg5MTA4MCwxMzkzMDY1MywxODc5MT
-YyOTIsLTEwMDEzNTEyMTcsNjY1MTIwMTgxLDEwNjM1NzU5OTdd
-fQ==
+eyJoaXN0b3J5IjpbLTczNjE0NTUzLDIwMzE4OTEwODAsMTM5Mz
+A2NTMsMTg3OTE2MjkyLC0xMDAxMzUxMjE3LDY2NTEyMDE4MSwx
+MDYzNTc1OTk3XX0=
 -->
