@@ -240,6 +240,10 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 - `test_step`
 
 
+**trainer.fit**      
+- input : lightning module, train loader, val loader(optional)
+- 
+
 **callbacks.LearningRateMonitor**     
 - logs current learning rate (comes in tensorboard)
 - `trainer=pl.Trainer( callbacks=[LearningRateMonitor("epoch")] )`
@@ -249,6 +253,7 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 - allows you to customize the saving routine of your checkpoints : how many checkpoints to keep, when to save, which metric to look out for, etc.
 - `trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"))`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzA2NTMsMTg3OTE2MjkyLC0xMDAxMz
-UxMjE3LDY2NTEyMDE4MSwxMDYzNTc1OTk3XX0=
+eyJoaXN0b3J5IjpbMTkwNTk2NTAwNSwxMzkzMDY1MywxODc5MT
+YyOTIsLTEwMDEzNTEyMTcsNjY1MTIwMTgxLDEwNjM1NzU5OTdd
+fQ==
 -->
