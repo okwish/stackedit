@@ -240,8 +240,13 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 - `test_step`
 
 
+**callbacks.LearningRateMonitor**, **callbacks.ModelCheckpoint**
+
+- trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"),  # Save the best checkpoint based on the maximum val_acc recorded. Saves only weights and not optimizer
+                                    LearningRateMonitor("epoch")] )
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDE4OTg5NCw2NjUxMjAxODEsMTA2Mz
+eyJoaXN0b3J5IjpbMTU3OTEzMTQ3NSw2NjUxMjAxODEsMTA2Mz
 U3NTk5N119
 -->
