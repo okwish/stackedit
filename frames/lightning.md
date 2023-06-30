@@ -243,12 +243,12 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 **callbacks.LearningRateMonitor**
 - logs current learning rate (comes in tensorboard)
 - `trainer=pl.Trainer( callbacks=[LearningRateMonitor("epoch")] )`
-- ` 
+
+
 **callbacks.ModelCheckpoint**
-    trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"), LearningRateMonitor("epoch")] )
-
-
+- allows you to customize the saving routine of your checkpoints : how many checkpoints to keep, when to save, which metric to look out for, etc.
+- `trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"))`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzY1OTQ2NjksLTEwMDEzNTEyMTcsNj
-Y1MTIwMTgxLDEwNjM1NzU5OTddfQ==
+eyJoaXN0b3J5IjpbMTg3OTE2MjkyLC0xMDAxMzUxMjE3LDY2NT
+EyMDE4MSwxMDYzNTc1OTk3XX0=
 -->
