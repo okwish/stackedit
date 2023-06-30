@@ -240,15 +240,15 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 - `test_step`
 
 
-**callbacks.LearningRateMonitor**, **callbacks.ModelCheckpoint**
-- 
-
-- 
-
+**callbacks.LearningRateMonitor**
+- logs current learning rate (comes in tensorboard)
+- `trainer=pl.Trainer( callbacks=[LearningRateMonitor("epoch")] )`
+- ` 
+**callbacks.ModelCheckpoint**
     trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"), LearningRateMonitor("epoch")] )
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDEzNTEyMTcsNjY1MTIwMTgxLDEwNj
-M1NzU5OTddfQ==
+eyJoaXN0b3J5IjpbLTE3NzY1OTQ2NjksLTEwMDEzNTEyMTcsNj
+Y1MTIwMTgxLDEwNjM1NzU5OTddfQ==
 -->
