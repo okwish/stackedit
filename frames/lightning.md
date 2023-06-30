@@ -226,6 +226,22 @@ All these while making Trainer object.
 - custom early stopping callback : make custom callback class; inherit from "EarlyStopping"; override needed functions like on_validation_end, on_train_end, .. 
 
 
+
+
+------------------------------------------------------
+------------------------------------------------------
+
+Out of data, model, loss, optimizer :- except data, everything else in lightning module; along with training, validation, test steps. This + "data"(usual data loader or data module) is passed to Trainer.
+
+- `__init__` -> assign models, loss, evaluation metrics, .. (then use where need in other attributes)
+- `configure_optimizers`
+- `training_step`
+- `validation_step`
+- `test_step`
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY1MTIwMTgxLDEwNjM1NzU5OTddfQ==
+eyJoaXN0b3J5IjpbMjE0MDE4OTg5NCw2NjUxMjAxODEsMTA2Mz
+U3NTk5N119
 -->
