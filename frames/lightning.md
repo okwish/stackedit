@@ -230,7 +230,7 @@ All these while making Trainer object.
 
 ------------------------------------------------------
 ------------------------------------------------------
-
+**Lightning module :- model; loss; evaluation; train,val,test**     
 Out of data, model, loss, optimizer :- except data, everything else in lightning module; along with training, validation, test steps. This + "data"(usual data loader or data module) is passed to Trainer.
 
 - `__init__` -> assign models, loss, evaluation metrics, .. (then use where need in other attributes)
@@ -240,15 +240,15 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 - `test_step`
 
 
-**callbacks.LearningRateMonitor**
+**callbacks.LearningRateMonitor**     
 - logs current learning rate (comes in tensorboard)
 - `trainer=pl.Trainer( callbacks=[LearningRateMonitor("epoch")] )`
 
 
-**callbacks.ModelCheckpoint**
+**callbacks.ModelCheckpoint**      
 - allows you to customize the saving routine of your checkpoints : how many checkpoints to keep, when to save, which metric to look out for, etc.
 - `trainer=pl.Trainer( callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc"))`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3OTE2MjkyLC0xMDAxMzUxMjE3LDY2NT
-EyMDE4MSwxMDYzNTc1OTk3XX0=
+eyJoaXN0b3J5IjpbMTM5MzA2NTMsMTg3OTE2MjkyLC0xMDAxMz
+UxMjE3LDY2NTEyMDE4MSwxMDYzNTc1OTk3XX0=
 -->
