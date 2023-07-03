@@ -258,9 +258,11 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 
 ------------------------------------------------------
 
-define a `calculate_loss(self, batch, mode=)` and use it in training_step, validation_step, test_step
+define a `calculate_loss(self, batch, mode=)` and use it in training_step, validation_step, test_step     
+
+A general model lightning module. Then for an application using it - make a class inheriting that module and override only functions that needs change. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTM4NjQ4MiwtNzM2MTQ1NTMsMjAzMT
-g5MTA4MCwxMzkzMDY1MywxODc5MTYyOTIsLTEwMDEzNTEyMTcs
-NjY1MTIwMTgxLDEwNjM1NzU5OTddfQ==
+eyJoaXN0b3J5IjpbMTAyNDAwMDQ1OCwxNDI5Mzg2NDgyLC03Mz
+YxNDU1MywyMDMxODkxMDgwLDEzOTMwNjUzLDE4NzkxNjI5Miwt
+MTAwMTM1MTIxNyw2NjUxMjAxODEsMTA2MzU3NTk5N119
 -->
