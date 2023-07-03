@@ -255,8 +255,12 @@ Out of data, model, loss, optimizer :- except data, everything else in lightning
 
 **seed**    
 `pl.seed_everything()` seed value arg
+
+------------------------------------------------------
+
+define a `calculate_loss(self, batch, mode=)` and use it in training_step, validation_step, test_step
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjE0NTUzLDIwMzE4OTEwODAsMTM5Mz
-A2NTMsMTg3OTE2MjkyLC0xMDAxMzUxMjE3LDY2NTEyMDE4MSwx
-MDYzNTc1OTk3XX0=
+eyJoaXN0b3J5IjpbMTQyOTM4NjQ4MiwtNzM2MTQ1NTMsMjAzMT
+g5MTA4MCwxMzkzMDY1MywxODc5MTYyOTIsLTEwMDEzNTEyMTcs
+NjY1MTIwMTgxLDEwNjM1NzU5OTddfQ==
 -->
